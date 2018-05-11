@@ -403,7 +403,7 @@ class PhpunitHelper {
             C(load_config(CONF_PATH.'test'.CONF_EXT));
         }
         // 加载.test.env文件定义的单元测试配置
-        if (class_exists('\\Snowair\\Dotenv\\Loader')) {
+        if (class_exists('\\weijer\\Dotenv\\Loader')) {
             $this->loadEnvConfig();
 
         }
@@ -601,8 +601,8 @@ class PhpunitHelper {
         $path = dirname(APP_PATH);
         $env_file = $path . '/.test.env';
         if (file_exists($env_file)) {
-            $Loader = new \Snowair\Dotenv\Loader($env_file);
-            $Loader->setFilters(['Snowair\Dotenv\DotArrayFilter'])
+            $Loader = new \weijer\Dotenv\Loader($env_file);
+            $Loader->setFilters(['weijer\Dotenv\DotArrayFilter'])
                 ->parse()
                 ->filter();
             if ($expect = C('DOTENV.expect')) {

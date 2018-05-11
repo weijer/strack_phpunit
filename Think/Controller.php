@@ -10,7 +10,7 @@
 // +----------------------------------------------------------------------
 namespace Think;
 
-use Snowair\Think\Phpunit\Response;
+use weijer\Think\Phpunit\Response;
 
 /**
  * ThinkPHP 控制器基类 抽象类

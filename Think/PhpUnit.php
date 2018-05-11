@@ -6,7 +6,7 @@
  */
 namespace Think;
 
-use Snowair\Think\Phpunit\Response;
+use weijer\Think\Phpunit\Response;
 
 trait PhpUnit
 {

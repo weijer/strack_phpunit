@@ -25,7 +25,7 @@ PHPUnit 及 Composer的使用本文不做介绍.
     "classmap": ["Application","ThinkPHP/Library"]
   },
   "require-dev": {
-    "snowair/think-phpunit": "dev-master"
+    "weijer/strack-phpunit": "dev-master"
   }
 }
 ```
