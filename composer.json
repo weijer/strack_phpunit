@@ -1,10 +1,10 @@
 {
-  "name": "snowair/think-phpunit",
-  "description": "ThinkPHP3.2单元测试辅助类",
+  "name": "weijer/strack-phpunit",
+  "description": "Strack单元测试辅助类",
   "authors": [
     {
-      "name": "zhuyajie",
-      "email": "xcoolcc@gmail.com"
+      "name": "weijer",
+      "email": "weiwei163@foxmail.com"
     }
   ],
   "autoload": {
@@ -15,7 +15,7 @@
     ]
   },
   "require": {
-    "php":">=5.4",
-    "phpunit/phpunit": "^4.7"
+    "php":">=7.0",
+    "phpunit/phpunit": "^6.5"
   }
 }
