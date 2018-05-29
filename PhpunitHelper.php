@@ -476,7 +476,7 @@ class PhpunitHelper {
      */
     public function setActionName($action)
     {
-        View::$action_name = $action;
+        //::$action_name = $action;
         $this->action_name = $action;
     }
 
