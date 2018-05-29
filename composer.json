@@ -1,6 +1,7 @@
 {
   "name": "strack/phpunit",
   "description": "Strack单元测试辅助类",
+  "license": "MIT",
   "authors": [
     {
       "name": "weijer",
