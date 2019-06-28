@@ -1,22 +1,25 @@
 {
-  "name": "strack/phpunit",
-  "description": "Strack单元测试辅助类",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "weijer",
-      "email": "weiwei163@foxmail.com"
+    "name": "strack/phpunit",
+    "license": "Apache-2.0",
+    "type": "strack-phpunit",
+    "authors": [
+        {
+            "name": "weijer",
+            "email": "weiwei163@foxmaul.com"
+        }
+    ],
+    "require": {
+        "topthink/think-installer": "~1.0",
+        "topthink/think-helper": "~1.0",
+        "phpunit/phpunit": "^4.8.26",
+        "symfony/dom-crawler": "^2.8.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Strack\\Phpunit\\": "src"
+        },
+        "files": [
+            "src/config.php"
+        ]
     }
-  ],
-  "autoload": {
-    "files":[
-      "PhpunitHelper.php",
-      "Response.php",
-      "include.php"
-    ]
-  },
-  "require": {
-    "php":">=7.0",
-    "phpunit/phpunit": "^6.5"
-  }
 }
