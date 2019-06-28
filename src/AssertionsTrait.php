@@ -13,7 +13,6 @@ namespace Strack\Phpunit;
 use Think\Response\View;
 use PHPUnit_Framework_Assert as PHPUnit;
 use Think\Session;
-use Think\Url;
 
 trait AssertionsTrait
 {
@@ -70,9 +69,9 @@ trait AssertionsTrait
 
     public function assertRedirectedTo($uri, $params = [])
     {
-        $this->assertInstanceOf('think\response\Redirect', $this->response);
+        $this->assertInstanceOf('Think\Response\Redirect', $this->response);
 
-        PHPUnit::assertEquals(Url::build($uri, $params), $this->response->getTargetUrl());
+        PHPUnit::assertEquals(U($uri, $params), $this->response->getTargetUrl());
     }
 
     public function assertSessionHas($key, $value = null)

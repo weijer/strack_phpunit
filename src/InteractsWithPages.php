@@ -17,9 +17,8 @@ use Symfony\Component\DomCrawler\Form;
 use Think\File;
 use Think\helper\Str;
 use Think\Request;
-use Think\response\Redirect;
+use Think\Response\Redirect;
 use PHPUnit_Framework_ExpectationFailedException as PHPUnitException;
-use Think\Url;
 
 trait InteractsWithPages
 {

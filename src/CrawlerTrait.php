@@ -11,7 +11,6 @@
 namespace Strack\Phpunit;
 
 use Think\App;
-use Think\Config;
 use Think\Cookie;
 use Think\Error;
 use Think\Exception;
