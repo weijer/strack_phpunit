@@ -11,8 +11,8 @@
 
 namespace Strack\Phpunit\Command;
 
-use PHPUnit_TextUI_Command;
-use PHPUnit_Util_Blacklist;
+use PHPUnit\TextUI\Command as TextUICommand;
+use PHPUnit\Util\Blacklist;
 use Think\Console\Command;
 use Think\Console\Input;
 use Think\Console\Output;
@@ -38,11 +38,10 @@ class Test extends Command
         array_shift($argv);
         array_shift($argv);
         array_unshift($argv, 'phpunit');
-        PHPUnit_Util_Blacklist::$blacklistedClassNames = [];
+        Blacklist::$blacklistedClassNames = [];
 
-        $code = (new PHPUnit_TextUI_Command())->run($argv, false);
+        $code = (new TextUICommand())->run($argv, false);
 
         return $code;
     }
-
 }
