@@ -11,7 +11,6 @@
 
 namespace Strack\Phpunit\Command;
 
-
 use PHPUnit_TextUI_Command;
 use PHPUnit_Util_Blacklist;
 use Think\Console\Command;
@@ -24,7 +23,9 @@ class Test extends Command
 {
     public function configure()
     {
-        $this->setName('unit')->setDescription('phpunit')->ignoreValidationErrors();
+        $this->setName('unit')
+            ->setDescription('phpunit')
+            ->ignoreValidationErrors();
     }
 
     public function execute(Input $input, Output $output)
