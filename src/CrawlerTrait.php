@@ -14,8 +14,8 @@ use Think\App;
 use Think\Cookie;
 use Think\Error;
 use Think\Exception;
-use think\Helper\Arr;
-use think\Helper\Str;
+use Think\Helper\Arr;
+use Think\Helper\Str;
 use Think\Request;
 use Think\Response;
 

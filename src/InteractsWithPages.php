@@ -15,7 +15,7 @@ use InvalidArgumentException;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\DomCrawler\Form;
 use Think\File;
-use think\helper\Str;
+use Think\Helper\Str;
 use Think\Request;
 use Think\Response\Redirect;
 use PHPUnit_Framework_ExpectationFailedException as PHPUnitException;
