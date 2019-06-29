@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "strack/installer": "dev-master",
+        "strack/installer": "1.0",
         "phpunit/phpunit": "^6.0",
         "symfony/dom-crawler": "^2.8.8"
     },
