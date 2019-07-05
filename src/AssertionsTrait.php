@@ -11,7 +11,7 @@
 namespace Strack\Phpunit;
 
 use Think\Response\View;
-use PHPUnit_Framework_Assert as PHPUnit;
+use PHPUnit\Framework\Assert as PHPUnit;
 use Think\Session;
 
 trait AssertionsTrait
