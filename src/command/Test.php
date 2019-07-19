@@ -13,11 +13,11 @@ namespace Strack\Phpunit\Command;
 
 use PHPUnit\TextUI\Command as TextUICommand;
 use PHPUnit\Util\Blacklist;
-use Think\Console\Command;
-use Think\Console\Input;
-use Think\Console\Output;
-use Think\Loader;
-use Think\Session;
+use think\console\Command;
+use think\console\Input;
+use think\console\Output;
+use think\Loader;
+use think\Session;
 
 class Test extends Command
 {

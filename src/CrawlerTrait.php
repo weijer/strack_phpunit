@@ -10,14 +10,14 @@
 // +----------------------------------------------------------------------
 namespace Strack\Phpunit;
 
-use Think\App;
-use Think\Cookie;
-use Think\Error;
-use Think\Exception;
-use Think\Helper\Arr;
-use Think\Helper\Str;
-use Think\Request;
-use Think\Response;
+use think\App;
+use think\Cookie;
+use think\Error;
+use think\Exception;
+use think\helper\Arr;
+use think\helper\Str;
+use think\Request;
+use think\Response;
 
 trait CrawlerTrait
 {

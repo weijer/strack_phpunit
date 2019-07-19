@@ -9,4 +9,4 @@
 // | Author: yunwuxin <448901948@qq.com>
 // +----------------------------------------------------------------------
 
-\Think\Console::addDefaultCommands(['\\Strack\\Phpunit\\Command\\Test']);
+\think\Console::addDefaultCommands(['\\Strack\\Phpunit\\Command\\Test']);

@@ -14,10 +14,10 @@ use Exception;
 use InvalidArgumentException;
 use Symfony\Component\DomCrawler\Crawler;
 use Symfony\Component\DomCrawler\Form;
-use Think\File;
-use Think\Helper\Str;
-use Think\Request;
-use Think\Response\Redirect;
+use think\File;
+use think\helper\Str;
+use think\request;
+use think\response\Redirect;
 use PHPUnit\Framework\ExpectationFailedException as PHPUnitException;
 
 trait InteractsWithPages

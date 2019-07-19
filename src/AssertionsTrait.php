@@ -10,9 +10,9 @@
 // +----------------------------------------------------------------------
 namespace Strack\Phpunit;
 
-use Think\Response\View;
+use think\response\View;
 use PHPUnit\Framework\Assert as PHPUnit;
-use Think\Session;
+use think\Session;
 
 trait AssertionsTrait
 {

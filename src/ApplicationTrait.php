@@ -10,8 +10,8 @@
 // +----------------------------------------------------------------------
 namespace Strack\Phpunit;
 
-use Think\Model;
-use Think\Session;
+use think\Model;
+use think\Session;
 
 trait ApplicationTrait
 {
