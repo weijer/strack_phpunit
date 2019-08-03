@@ -16,6 +16,7 @@ use think\Error;
 use think\Exception;
 use think\helper\Arr;
 use think\helper\Str;
+use think\Model;
 use think\Request;
 use think\Response;
 
@@ -77,7 +78,10 @@ trait CrawlerTrait
             $cookies, $files, array_replace($this->serverVariables, $server)
         );
         try {
+            $model = new Model();
+            $model->startTrans();//强制开启事务
             $response = App::run($request);
+            $model->rollback();
         } catch (Exception $e) {
             $response = Error::getExceptionHandler()->render($e);
         } catch (\Throwable $e) {
@@ -142,7 +146,7 @@ trait CrawlerTrait
      * Format the given key and value into a JSON string for expectation checks.
      *
      * @param  string $key
-     * @param  mixed  $value
+     * @param  mixed $value
      * @return string
      */
     protected function formatToExpectedJson($key, $value)
